@@ -93,8 +93,8 @@ while True:
             x, y = -1, -1
     
     #Control print
-    running_time = time.time() - running_start
-    print("Loop:", loop, "- Stage:", k, "- Time:", "{:.2f}".format(running_time/60))
+    elapsed_time = time.time() - running_start
+    print("Loop:", loop, "- Stage:", k, "- Execution time:", time.strftime("%H:%M:%S", time.gmtime(elapsed_time)))
     loop += 1
     
     #validates image found and does the click on position x, y
